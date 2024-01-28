@@ -1,0 +1,22 @@
+createing a db:
+    php artisan make:model Invoice --all
+    specify any rlts with othwer models in the model file
+    add the needed fields to the migration file in database->migrations 
+
+1- realtion : on modal add function with the name of the other model and add hasMany or belongsto
+
+2- factory to create teh shape of the fake data with faker and seeds is to actucally create them 
+
+3- to manipulate the data shape response in json we use resources 
+    for single object is called resource
+    for single object is called resource
+    when calling customer collection it will look for the resource for each one like customer collection it will assume a customer resource rexist and filter depending on it 
+4- show for a single data in the controller
+5- to filter use query builder write it in services and see the notes there 
+   so we createan api filter vbase model and let them inhirt from it 
+6- customer -> with('invoices)  return only the customer that have invoices
+7-$request-> qurey to access teh query $request-> qurey('amount') to access a avraibale in it like amount
+
+8- to create we need the store request method
+
+9- when working with post remmber the headr on the request to chaneg teh Accpet token to just accept json
